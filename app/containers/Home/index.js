@@ -68,28 +68,59 @@ export default class Home extends React.PureComponent {
       display:"flex"
 
     }
-    const imgContainer={
+    const boxOne={
       display:"flex",
       flexDirection:"column",
-      border:"1px #ccc solid",
-      padding:"10px"
-
+      width:"300px",
+      height:"300px",
+      background:"#000000",
+      marginTop:"50px"
     }
+    const mainStyle={
+    display:"flex",
+    flexDirection:"row",
+    justifyContent:"space-around"
+    }
+
+
+
+
+
 
     const heading={
       display:"flex",
-      width:"100px",
-      height:"100px",
-      backgound:"ffffff"
-
+      fontSize:"15px",
+      justifyContent:"center",
+      color:"#ffffff",
+      fontFamily:"Roboto, sans serif",
+      padding:"10px",
+      marginTop:"20px"
+    }
+    const container2={
+      display:"flex",
+      fontSize:"10px",
+      justifyContent:"center",
+      color:"#ffffff",
+      fontFamily:"Roboto, sans serif",
 
     }
     const boxSix={
-      display:"flex"
+      display:"flex",
+      flexDirection:"column",
+      width:"300px",
+      height:"300px",
+      background:"#000000",
+      marginTop:"50px"
+
 
     }
     const boxSeven={
-      display:"flex"
+      display:"flex",
+      flexDirection:"column",
+      width:"300px",
+      height:"300px",
+      background:"#000000",
+      marginTop:"50px"
 
     }
     const boxEight={
@@ -98,8 +129,22 @@ export default class Home extends React.PureComponent {
     }
     const parStyle={
       display:"flex",
-      width:"100px",
-      height:"100px"
+
+
+
+
+
+
+    }
+    const parStyle1={
+      display:"flex",
+      fontSize:"15px",
+      justifyContent:"center",
+      color:"#ffffff",
+      fontFamily:"Roboto, sans serif",
+      padding:"10px",
+      marginTop:"20px"
+
 
     }
     const boxNine={
@@ -112,6 +157,14 @@ export default class Home extends React.PureComponent {
       display:"flex"
 
     }
+    const footerStyle={
+      width:"100%",
+      height:"50px",
+      background:"#000000",
+      bottom:"auto"
+
+    }
+
 
     return (
       <div>
@@ -148,39 +201,50 @@ export default class Home extends React.PureComponent {
 
 
         </header>
-        <main>
 
 
-          <div style={imgContainer}>
-              <h1 style={heading}>Basic</h1>
-                <p style={parStyle}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <main style={mainStyle}>
+
+
+          <div style={boxOne}>
+
+              <h1 style={heading}>PREMIUM</h1>
+
+                <p style={parStyle}>LIVE CHAT SUPPORT</p>
 
 
           </div>
 
-          <div style={boxSix}>
-              <h1 style={heading}>Classic</h1>
-                <p style={parStyle}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
 
+          <div style={boxSix}>
+              <h1 style={heading}>CLASSIC</h1>
+              <div style={container2}>
+              <p style={parStyle}>ALL MAJOR FORMS</p>
+
+              </div>
 
            </div>
 
           <div style={boxSeven}>
-              <h1 style={heading}>Professional</h1>
-                <p style={parStyle}>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+              <div style={heading}>PROFESSIONAL</div>
+              <div style={parStyle1}>BEST FOR SELF EMPLOYED</div>
+
 
 
           </div>
 
 
         </main>
-        <footer>
 
-          <div style={boxEight}> </div>
+
+
+
 
           <div style={boxNine}> </div>
 
           <div style={boxTen}> </div>
+          <footer style={footerStyle}>
+
 
 
 
