@@ -9,6 +9,7 @@ import Helmet from 'react-helmet';
 import Button from 'react-bootstrap/lib/Button';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import Menu from 'material-ui/svg-icons/navigation/Menu';
+import TextField from 'material-ui/TextField';
 import {Link} from 'react-router';
 
 
@@ -26,10 +27,18 @@ export default class Home extends React.PureComponent {
 
 
     }
+    const textField={
+      marginTop:"100px",
+      marginLeft:"1500px",
+      background:"white",
+      borderRadius:"5px"
+
+
+    }
     const logoStyle={
       width:"350px",
       height:"100px",
-      marginTop:"20px",
+      marginTop:"10px",
       background:"url(http://easiertaxes.com/wp-content/uploads/2013/07/taxslayer-logo-large.png)",
       backgroundSize:"cover",
 
@@ -41,7 +50,9 @@ export default class Home extends React.PureComponent {
       flexDirection:"column",
       padding:"15px",
       alignSelf:"center",
-      color:"#000000"
+      color:"#000000",
+      fontSize:"18px",
+      fontFamily:"Roboto, sans serif"
 
 
     }
@@ -181,14 +192,22 @@ export default class Home extends React.PureComponent {
 
     }
     const boxTen={
-      display:"flex"
+      display:"flex",
+      flexDirection:"row"
 
     }
     const footerStyle={
-      width:"100%",
-      height:"50px",
-      background:"#000000",
-      bottom:"auto"
+      display:"flex",
+      justifyContent:"space-around"
+
+
+    }
+    const listStyle={
+      width:"50px",
+      height:"20px",
+      marginLeft:"20px",
+
+
 
     }
     /*End Footer*/
@@ -213,7 +232,11 @@ export default class Home extends React.PureComponent {
               <Menu/>
             </nav>
           </div>
+
           <banner style={bannerStyle}>
+            <TextField hintText="search" style={textField}/>
+
+
 
           </banner>
 
@@ -265,7 +288,14 @@ export default class Home extends React.PureComponent {
         <div style={boxNine}> </div>
 
         <div style={boxTen}> </div>
+
         <footer style={footerStyle}>
+          <Link to="/" style={linkStyle}>Contact</Link>
+          <Link to="/" style={linkStyle}>Support</Link>
+          <Link to="/" style={linkStyle}>Knowledge Base</Link>
+          <Link to="/" style={linkStyle}>Efile</Link>
+
+
 
         </footer>
 
