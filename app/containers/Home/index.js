@@ -14,6 +14,7 @@ import {Link} from 'react-router';
 
 export default class Home extends React.PureComponent {
   render() {
+    /*This is nav properties*/
     const bannerStyle={
       display:"flex",
       width:"100%",
@@ -57,7 +58,8 @@ export default class Home extends React.PureComponent {
       background:"white"
     }
     const boxTwo={
-      display:"flex"
+      display:"flex",
+      background:"#d90000"
 
     }
     const boxThree={
@@ -68,6 +70,9 @@ export default class Home extends React.PureComponent {
       display:"flex"
 
     }
+    /*End of Nav*/
+
+    /*Main*/
     const boxOne={
       display:"flex",
       flexDirection:"column",
@@ -82,14 +87,9 @@ export default class Home extends React.PureComponent {
     justifyContent:"space-around"
     }
 
-
-
-
-
-
     const heading={
       display:"flex",
-      fontSize:"15px",
+      fontSize:"25px",
       justifyContent:"center",
       color:"#ffffff",
       fontFamily:"Roboto, sans serif",
@@ -109,9 +109,19 @@ export default class Home extends React.PureComponent {
       flexDirection:"column",
       width:"300px",
       height:"300px",
-      background:"#000000",
+      background:"#d90000",
       marginTop:"50px"
 
+
+    }
+    const price={
+      display:"flex",
+      fontSize:"30px",
+      justifyContent:"center",
+      color:"#ffffff",
+      fontFamily:"Roboto, sans serif",
+      padding:"10px",
+      marginTop:"20px"
 
     }
     const boxSeven={
@@ -129,12 +139,6 @@ export default class Home extends React.PureComponent {
     }
     const parStyle={
       display:"flex",
-
-
-
-
-
-
     }
     const parStyle1={
       display:"flex",
@@ -144,9 +148,32 @@ export default class Home extends React.PureComponent {
       fontFamily:"Roboto, sans serif",
       padding:"10px",
       marginTop:"20px"
+    }
+    const buttonStyle={
+      width:"100px",
+      alignSelf:"center",
+      background:"green",
+      marginTop:"30px"
+    }
+    const bannerStyle2={
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"center",
+      width:"100%",
+      height:"1000px",
+      alignSelf:"center",
+      background:"url(https://cdn-az.taxslayer.com/content/images/program_screen.jpg)",
+      marginTop:"50px",
+      backgroundSize:"cover"
+
 
 
     }
+    /*End of Main*/
+
+
+
+    /*footer*/
     const boxNine={
       display:"flex",
       width:"100px",
@@ -164,6 +191,7 @@ export default class Home extends React.PureComponent {
       bottom:"auto"
 
     }
+    /*End Footer*/
 
 
     return (
@@ -189,6 +217,7 @@ export default class Home extends React.PureComponent {
 
           </banner>
 
+
           <div style={boxTwo}> </div>
 
           <div style={boxThree}>
@@ -205,48 +234,38 @@ export default class Home extends React.PureComponent {
 
         <main style={mainStyle}>
 
-
           <div style={boxOne}>
-
-              <h1 style={heading}>PREMIUM</h1>
-
-                <p style={parStyle}>LIVE CHAT SUPPORT</p>
-
-
+            <div style={heading}>PREMIUM</div>
+            <div style={parStyle1}>LIVE CHAT SUPPORT</div>
+            <div style={price}>$40</div>
+            <Button style={buttonStyle}  bsStyle="primary">Primary</Button>
           </div>
 
 
           <div style={boxSix}>
-              <h1 style={heading}>CLASSIC</h1>
-              <div style={container2}>
-              <p style={parStyle}>ALL MAJOR FORMS</p>
-
-              </div>
-
+            <div style={heading}>CLASSIC</div>
+            <div style={parStyle1}>ALL MAJOR FORMS</div>
+            <div style={price}>$22</div>
+            <Button style={buttonStyle} bsStyle="primary">Primary</Button>
            </div>
 
           <div style={boxSeven}>
-              <div style={heading}>PROFESSIONAL</div>
-              <div style={parStyle1}>BEST FOR SELF EMPLOYED</div>
-
-
-
+            <div style={heading}>PROFESSIONAL</div>
+            <div style={parStyle1}>BEST FOR SELF EMPLOYED</div>
+            <div style={price}>$55</div>
+            <Button style={buttonStyle}  bsStyle="primary">Primary</Button>
           </div>
-
 
         </main>
 
+        <div style={bannerStyle2}>
 
+        </div>
 
+        <div style={boxNine}> </div>
 
-
-          <div style={boxNine}> </div>
-
-          <div style={boxTen}> </div>
-          <footer style={footerStyle}>
-
-
-
+        <div style={boxTen}> </div>
+        <footer style={footerStyle}>
 
         </footer>
 
