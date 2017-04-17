@@ -86,10 +86,10 @@ class Header extends React.PureComponent {
         <div>
           <nav style={navBar}>
             <p style={logoStyle}></p>
-            <Link to="/" style={linkStyle}>Products</Link>
-            <Link to="/" style={linkStyle}>Refund Calculator</Link>
-            <Link to="/" style={linkStyle}>About</Link>
-            <Link to="/" style={linkStyle}>Support</Link>
+            <Link to="/Products" style={linkStyle}>Products</Link>
+            <Link to="/RefundCalculator" style={linkStyle}>Refund Calculator</Link>
+            <Link to="/About" style={linkStyle}>About</Link>
+            <Link to="/Support" style={linkStyle}>Support</Link>
             <Menu/>
           </nav>
         </div>
@@ -112,10 +112,10 @@ class Header extends React.PureComponent {
         <div>
           <nav style={navBar}>
             <p style={logoStyle}></p>
-            <Link to="/" style={linkStyle}>Products</Link>
-            <Link to="/" style={linkStyle}>Refund Calculator</Link>
-            <Link to="/" style={linkStyle}>About</Link>
-            <Link to="/" style={linkStyle}>Support</Link>
+            <Link to="/Products" style={linkStyle}>Products</Link>
+            <Link to="/RefundCalculator" style={linkStyle}>Refund Calculator</Link>
+            <Link to="/About" style={linkStyle}>About</Link>
+            <Link to="/Support" style={linkStyle}>Support</Link>
             <Menu/>
           </nav>
         </div>

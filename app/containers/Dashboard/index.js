@@ -7,6 +7,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 
+
 export default class Dashboard extends React.PureComponent {
           constructor(props) {
             super(props);
@@ -62,27 +63,111 @@ export default class Dashboard extends React.PureComponent {
             })
             .then(function(json) {
               if(json.success) {
-                alert("Success");
+                alert(json.success);
               }
               else if(json.error) {
-                alert("Error");
+                alert(json.error);
               }
             })
           }
 
           render() {
+
+            const divOne={
+            display:"flex",
+            flexDirection:"column",
+            width:"200px",
+            height:"100%",
+            animationDirection:"normal"
+            }
+            const inputOne={
+            display:"flex",
+            height:"35px",
+            border:"2px solid white",
+            color:"white",
+            fontFamily:"Roboto, sans serif"
+            }
+            const divTwo={
+              display:"flex",
+              flexDirection:"column",
+              justifyContent:"space-between",
+              width:"400px",
+              height:"380px",
+              marginTop:"10px",
+              border:"2px solid white"
+            }
+            const textArea={
+              display:"flex",
+              flexDirection:"row",
+              justifyContent:"space-between",
+              border:"2px solid black",
+              color:"white",
+              fontFamily:"Roboto, sans serif"
+            }
+            const divThree={
+              display:"flex",
+              flexDirection:"row",
+              marginTop:"10px",
+
+            }
+            const inputTwo={
+              display:"flex",
+              width:"96px",
+              height:"30px",
+              border:"2px solid white",
+
+            }
+            const divFour={
+              display:"flex",
+              flexDirection:"row",
+
+
+            }
+            const imageStyle={
+              display:"flex",
+              marginTop:"10px"
+
+            }
+            const divFive={
+              display:"flex",
+              flexDirection:"row",
+
+            }
+            const inputThree={
+              display:"flex",
+              marginTop:"10px",
+              border:"2px solid white",
+              color:"white",
+              fontFamily:"Roboto, sans serif"
+            }
+            const background={
+              display:"flex",
+              background:"url(https://pbs.twimg.com/media/C9D07mhXoAEUezM.jpg)",
+              backgroundSize:"cover",
+              minHeight:"100vh",
+              flexDirection:"column"
+            }
+
             return (
-              <div>
+              <div style={background}>
                 <Helmet title="Dashboard" meta={[ { name: 'description', content: 'Description of Dashboard' }]}/>
 
-                <input onChange={this.handleTitle} type="text" placeholder="Title" />
-                <textarea onChange={this.handleBody} placeholder="Body"> </textarea>
-                <input onChange={this.handleImage} type="file" />
-                <img src={this.state.preview}/>
-                <input onTouchTap={this.storeArticle} type="submit"/>
+                <div style={divOne}>
+                  <input style={inputOne} onChange={this.handleTitle} type="text" placeholder="Title" />
+                </div>
+                <div style={divTwo}>
+                  <textarea style={textArea} onChange={this.handleBody} placeholder="Body"> </textarea>
+                </div>
+                <div style={divThree}>
+                  <input style={inputTwo} onChange={this.handleImage} type="file" />
+                </div>
+                <div style={divFour}>
+                  <img style={imageStyle} src={this.state.preview}/>
+                </div>
+                <div style={divFive}>
+                  <input style={inputThree} onTouchTap={this.storeArticle} type="submit"/>
+                </div>
               </div>
-
-      //Remove this line and you can start writing your code here.
 
     );
   }

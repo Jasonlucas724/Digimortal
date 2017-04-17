@@ -14,7 +14,10 @@ import {Link} from 'react-router';
 import Header from 'components/Header';
 import Main from 'components/Main';
 import Footer from 'components/Footer';
-
+import Products from 'containers/Products';
+import RefundCalculator from 'containers/RefundCalculator';
+import About from 'containers/About';
+import Support from 'containers/Support';
 
 
 

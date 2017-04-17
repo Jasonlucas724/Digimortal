@@ -19,6 +19,43 @@ export default function createRoutes() {
        },
      },
      {
+        path: '/Products',
+        name: 'products',
+        getComponent(nextState, comMod) {
+          import('containers/Products')
+            .then(loadModule(comMod))
+            .catch(errorLoading);
+        },
+      },
+      {
+         path: '/RefundCalculator',
+         name: 'refund calculator',
+         getComponent(nextState, comMod) {
+           import('containers/RefundCalculator')
+             .then(loadModule(comMod))
+             .catch(errorLoading);
+         },
+       },
+       {
+          path: '/About',
+          name: 'about',
+          getComponent(nextState, comMod) {
+            import('containers/About')
+              .then(loadModule(comMod))
+              .catch(errorLoading);
+          },
+        },
+        {
+           path: '/Support',
+           name: 'support',
+           getComponent(nextState, comMod) {
+             import('containers/Support')
+               .then(loadModule(comMod))
+               .catch(errorLoading);
+           },
+         },
+
+     {
         path: '/Dashboard',
         name: 'dashboard',
         getComponent(nextState, comMod) {
