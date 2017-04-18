@@ -94,9 +94,7 @@ class Header extends React.PureComponent {
           </nav>
         </div>
 
-        <banner style={bannerStyle}>
-          <TextField hintText="search" style={textField}/>
-        </banner>
+
 
 
         <div style={boxTwo}> </div>
