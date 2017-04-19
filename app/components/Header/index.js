@@ -20,8 +20,6 @@ class Header extends React.PureComponent {
       background:"url(http://www.adirectory.us/pix/tax-preparation-400.jpg)",
       backgroundSize:"cover",
 
-
-
     }
     const textField={
       marginTop:"100px",
@@ -94,13 +92,15 @@ class Header extends React.PureComponent {
           </nav>
         </div>
 
+        <div style={bannerStyle}>
+          <TextField hintText="search" style={textField}/>
+        </div>
 
 
-
-        <div style={boxTwo}> </div>
+        <div style={boxTwo}></div>
         <div style={boxThree}>
         </div>
-        <div style={boxFour}> </div>
+        <div style={boxFour}></div>
       </header>
       </Responsive>
 
@@ -118,15 +118,15 @@ class Header extends React.PureComponent {
           </nav>
         </div>
 
-        <banner style={bannerStyle}>
+        <div style={bannerStyle}>
           <TextField hintText="search" style={textField}/>
-        </banner>
+        </div>
 
 
-        <div style={boxTwo}> </div>
+        <div style={boxTwo}></div>
         <div style={boxThree}>
         </div>
-        <div style={boxFour}> </div>
+        <div style={boxFour}></div>
       </header>
       </Responsive>
 

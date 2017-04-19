@@ -49,7 +49,7 @@ export default class Products extends React.PureComponent {
       width:"100%",
       height:"120px",
       border:"2px solid black",
-      marginTop:"250px",
+      marginTop:"150px",
       background:"red"
 
 
@@ -119,6 +119,35 @@ export default class Products extends React.PureComponent {
 
 
     }
+    const banner2={
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"space-between",
+      width:"200px",
+      height:"300px",
+
+    }
+    const image1={
+      display:"flex",
+      flexDirection:"row",
+      width:"200px",
+      height:"200px",
+      background:"url(https://cdn-az.taxslayer.com/content/images/fees_seal.png?v=2017.4.12.1)",
+      backgroundSize:"cover",
+      marginTop:"200px",
+
+    }
+    const image2={
+      display:"flex",
+      flexDirection:"row",
+      width:"200px",
+      height:"200px",
+      background:"url(https://cdn-az.taxslayer.com/content/images/max-refund_seal.png?v=2017.4.12.1)",
+      backgroundSize:"cover",
+
+
+    }
+
 
     const carousel={
       marginTop:"1000px",
@@ -156,13 +185,21 @@ export default class Products extends React.PureComponent {
 
         <button style={buttonStyle}></button>
         <div style={sectionOne}>
-          <banner style={banner}></banner>
+          <div style={banner}></div>
           <div style={textContainer}>
             <div style={textField1}>TaxSlayer Classic</div>
             <div style={textField1}>File Federal for $22</div>
             <div style={textField1}>Easily prepare and e-file your federal return with additional forms and support. Works on all devices.</div>
           </div>
         </div>
+
+        <div style={banner2}>
+          <div style={image1}>
+          </div>
+
+        </div>
+
+
 
 
 
