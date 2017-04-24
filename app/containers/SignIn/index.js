@@ -58,6 +58,7 @@ export default class SignIn extends React.PureComponent {
     }
 
     return (
+
       <div>
         <Helmet title="SignIn" meta={[ { name: 'description', content: 'Description of SignIn' }]}/>
 

@@ -105,36 +105,30 @@ export default class Dashboard extends React.PureComponent {
               fontFamily:"Roboto, sans serif"
             }
             const divThree={
-              display:"flex",
               flexDirection:"row",
               marginTop:"10px",
 
             }
-            const inputTwo={
-              display:"flex",
+          const inputTwo={
               width:"96px",
               height:"30px",
               border:"2px solid white",
 
             }
             const divFour={
-              display:"flex",
               flexDirection:"row",
 
 
             }
             const imageStyle={
-              display:"flex",
               marginTop:"10px"
 
             }
             const divFive={
-              display:"flex",
               flexDirection:"row",
 
             }
             const inputThree={
-              display:"flex",
               marginTop:"10px",
               border:"2px solid white",
               color:"white",

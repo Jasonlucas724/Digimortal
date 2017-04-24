@@ -9,89 +9,73 @@ import Helmet from 'react-helmet';
 
 export default class SignUp extends React.PureComponent {
   render() {
-    const div1={
-    display:"flex",
-    flexDirection:"column",
-    width:"200px",
-    height:"100%",
-    color:"#000000",
-    background:"black",
-    marginTop:"100px",
-    marginLeft:"40%"
-    }
-    const inputOne={
-    display:"flex",
-    height:"35px",
-    color:"white",
-    fontFamily:"Roboto, sans serif",
-    }
-    const div2={
-      display:"flex",
-      flexDirection:"column",
-      justifyContent:"space-between",
-      width:"200px",
-      height:"40px",
-      marginTop:"10px",
-      marginLeft:"40%"
-    }
 
-    const inputTwo={
-    display:"flex",
-    height:"35px",
-    color:"white",
-    fontFamily:"Roboto",
-    background:"black",
-    fontFamily:"Roboto"
-
-
-
-    }
-
-    const textArea={
+    const bodyBackground={
       display:"flex",
       flexDirection:"row",
-      justifyContent:"space-between",
+      height:"300px",
       border:"2px solid black",
-      color:"black",
-
-
-    }
-    const div3={
-      display:"flex",
-      flexDirection:"column",
+      maxWidth:"1000px",
+      margin:"0 auto",
       justifyContent:"space-between",
-      width:"200px",
+      marginTop:"350px"
+    }
+    const logo={
+      display:"flex",
+      flexDirection:"row",
+      width:"450px",
+      height:"300px",
+      background:"url()",
+      backgroundSize:"cover",
+      bottom:"10px"
+
+    }
+    const headerStyle={
       height:"40px",
-      marginTop:"10px",
-      marginLeft:"40%"
-    }
-
-    const inputThree={
-    display:"flex",
-    height:"35px",
-    color:"white",
-    fontFamily:"Roboto",
-    background:"black",
-    fontFamily:"Roboto"
-
-
+      background:"red",
+      width:"498px"
 
     }
+    const inputStyle={
+      display:"flex",
+      flexDirection:"row",
+      fontFamily:"Roboto, sans serif",
+    }
 
-
+    const signinBox={
+      display:"flex",
+      width:"50%",
+      flexDirection:"column"
+    }
+    const signupBox={
+      width:"50%"
+    }
+    const labelOne={
+      fontFamily:"Roboto, sans serif"
+    }
+    const labelTwo={
+      fontFamily:"Roboto, sans serif"
+    }
 
     return (
       <div>
         <Helmet title="SignUp" meta={[ { name: 'description', content: 'Description of SignUp' }]}/>
 
-        <div style={div1}>
-          <input style={inputOne} type="text" placeholder="Username" />
-        </div>
-        <div style={div2}>
-          <input style={inputTwo} type="text" placeholder="Password" />
-        </div>
-        <div style={div3}>
-          <input style={inputThree} type="text" placeholder="Email" />
+        <div style={bodyBackground}>
+          <div style={logo}></div>
+          <div style={signupBox}></div>
+
+          <div style={signinBox}>
+            <div style={headerStyle}></div>
+            <div>
+              <label style={labelOne}>Username</label>
+              <input style={inputStyle} type="text" placeholder="Username" />
+            </div>
+            <div>
+              <label style={labelTwo}>Password</label>
+              <input style={inputStyle} type="text" placeholder="Password" />
+            </div>
+          </div>
         </div>
       </div>
     );

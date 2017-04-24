@@ -26,8 +26,6 @@ class Header extends React.PureComponent {
       marginLeft:"1500px",
       background:"white",
       borderRadius:"5px"
-
-
     }
     const logoStyle={
       width:"350px",
@@ -38,7 +36,7 @@ class Header extends React.PureComponent {
 
 
     }
-    const linkStyle={
+    const navLink={
       textDecoration:"0",
       display:"flex",
       flexDirection:"column",
@@ -84,10 +82,10 @@ class Header extends React.PureComponent {
         <div>
           <nav style={navBar}>
             <p style={logoStyle}></p>
-            <Link to="/Products" style={linkStyle}>Products</Link>
-            <Link to="/RefundCalculator" style={linkStyle}>Refund Calculator</Link>
-            <Link to="/About" style={linkStyle}>About</Link>
-            <Link to="/Support" style={linkStyle}>Support</Link>
+            <Link to="/Products" style={navLink}>Products</Link>
+            <Link to="/RefundCalculator" style={navLink}>Refund Calculator</Link>
+            <Link to="/About" style={navLink}>About</Link>
+            <Link to="/Support" style={navLink}>Support</Link>
             <Menu/>
           </nav>
         </div>
@@ -110,10 +108,10 @@ class Header extends React.PureComponent {
         <div>
           <nav style={navBar}>
             <p style={logoStyle}></p>
-            <Link to="/Products" style={linkStyle}>Products</Link>
-            <Link to="/RefundCalculator" style={linkStyle}>Refund Calculator</Link>
-            <Link to="/About" style={linkStyle}>About</Link>
-            <Link to="/Support" style={linkStyle}>Support</Link>
+            <Link to="/Products" style={navLink}>Products</Link>
+            <Link to="/RefundCalculator" style={navLink}>Refund Calculator</Link>
+            <Link to="/About" style={navLink}>About</Link>
+            <Link to="/Support" style={navLink}>Support</Link>
             <Menu/>
           </nav>
         </div>
