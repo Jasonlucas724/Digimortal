@@ -5,6 +5,7 @@
 */
 
 import React from 'react';
+import Helmet from 'react-helmet';
 import Responsive from 'react-responsive';
 import {Link} from 'react-router';
 import Menu from 'material-ui/svg-icons/navigation/Menu';
