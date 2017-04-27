@@ -10,10 +10,185 @@ import Responsive from 'react-responsive';
 import {Link} from 'react-router';
 import Menu from 'material-ui/svg-icons/navigation/Menu';
 import TextField from 'material-ui/TextField';
+import Person from 'material-ui/svg-icons/social/person';
+import Description from 'material-ui/svg-icons/action/description';
+import AccountBalance from 'material-ui/svg-icons/action/account-balance';
+import ContentCopy from 'material-ui/svg-icons/content/content-copy';
+import Assignment from 'material-ui/svg-icons/action/assignment';
+import AttachMoney from 'material-ui/svg-icons/editor/attach-money';
+import CheckCircle from 'material-ui/svg-icons/action/check-circle';
+
 
 
 
 export default class RefundCalculator extends React.PureComponent {
+  constructor(props) {
+    super(props);
+    this.state = {
+      hover:0
+    }
+  }
+  handleHover = (id) => {
+    this.setState({
+      hover:id
+    })
+  }
+  renderBoxes = () => {
+    const iconOne={
+      width:"50px",
+      height:"50px",
+      background:"transparent",
+
+
+
+    }
+    const textFieldOne={
+      fontSize:"15px",
+      color:"grey",
+      fontFamily:"Roboto, sans serif",
+
+    }
+    const iconTwo={
+      width:"50px",
+      height:"50px",
+      background:"transparent",
+
+
+    }
+    const textFieldTwo={
+      fontSize:"15px",
+      color:"grey",
+      fontFamily:"Roboto, sans serif",
+
+    }
+    const iconThree={
+      width:"50px",
+      height:"50px",
+      background:"transparent",
+
+
+    }
+    const textFieldThree={
+      fontSize:"15px",
+      color:"grey",
+      fontFamily:"Roboto, sans serif",
+
+    }
+    const iconFour={
+      width:"50px",
+      height:"50px",
+      background:"transparent",
+
+
+    }
+    const textFieldFour={
+      fontSize:"15px",
+      color:"grey",
+      fontFamily:"Roboto, sans serif",
+
+    }
+    const iconFive={
+      width:"50px",
+      height:"50px",
+      background:"transparent",
+
+    }
+    const textFieldFive={
+      fontSize:"15px",
+      color:"grey",
+      fontFamily:"Roboto, sans serif",
+
+    }
+    const iconSix={
+      width:"50px",
+      height:"50px",
+      background:"transparent",
+
+    }
+    const textFieldSix={
+      fontSize:"15px",
+      color:"grey",
+      fontFamily:"Roboto, sans serif",
+
+    }
+    const iconSeven={
+      width:"50px",
+      height:"50px",
+      background:"transparent",
+
+    }
+    const textFieldSeven={
+      fontSize:"15px",
+      color:"grey",
+      fontFamily:"Roboto, sans serif",
+
+    }
+    const container={
+      display:"flex",
+      width:"100%",
+      maxWidth:"1000px",
+      flexDirection:"row",
+      justifyContent:"space-around"
+    }
+    const refundBox={
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"center",
+      alignItems:"center",
+      border:"2px solid grey",
+      width:"100px",
+      height:"100px",
+    }
+    const hoverStyle={
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"center",
+      alignItems:"center",
+      border:"2px solid grey",
+      width:"100px",
+      height:"100px",
+      background:"#1F5899"
+    }
+    var boxStyle = refundBox;
+
+
+    return (
+      <div style={container}>
+        <div style={boxStyle}>
+          <Description style={iconOne}/>
+          <p style={textFieldOne}>Basic Info</p>
+        </div>
+        <div style={boxStyle}>
+          <Person style={iconTwo}/>
+          <p style={textFieldTwo}>Family</p>
+        </div>
+        <div style={boxStyle}>
+          <AccountBalance style={iconThree}/>
+          <p style={textFieldThree}>income</p>
+        </div>
+        <div style={boxStyle}>
+          <ContentCopy style={iconFour}/>
+          <p style={textFieldFour}>Deductions</p>
+        </div>
+        <div style={boxStyle}>
+          <Assignment style={iconFive}/>
+          <p style={textFieldFive}>Credits</p>
+        </div>
+        <div style={boxStyle}>
+          <AttachMoney style={iconSix}/>
+          <p style={textFieldSix}>Results</p>
+        </div>
+        <div style={boxStyle}>
+          <CheckCircle style={iconSeven}/>
+          <p style={textFieldSeven}>Start</p>
+        </div>
+      </div>
+    )
+  }
+
+
+
+
   render() {
     const navBar={
       display:"flex",
@@ -53,9 +228,11 @@ export default class RefundCalculator extends React.PureComponent {
       flexDirection:"column",
       width:"300px",
       height:"300px",
-      background:"#929998",
+      background:"url(http://www.techlicious.com/images/computers/woman-laptop-cash-shutterstock-510px.jpg)",
       justifyContent:"center",
-      margin:"20px"
+      margin:"20px",
+      backgroundSize:"cover",
+
 
 
     }
@@ -87,23 +264,13 @@ export default class RefundCalculator extends React.PureComponent {
       display:"flex",
       fontSize:"30px",
       color:"black",
+      textAlign:"justify"
     }
-    const container={
-      display:"flex",
-      width:"100%",
-      maxWidth:"1000px",
-      flexDirection:"row",
-      justifyContent:"space-around"
-    }
-    const refundBox={
-      background:"#555555",
-      width:"100px",
-      height:"100px",
-    }
+
     const TextField={
       display:"flex",
       flexDirection:"column",
-      width:"400px",
+      justifyContent:"center",
       fontFamily:"Roboto, sans serif",
       color:"red"
 
@@ -111,9 +278,32 @@ export default class RefundCalculator extends React.PureComponent {
     const moneyIcon={
       fontSize:"50px",
       color:"green",
-      margin:"0 auto"
+      marginLeft:"145px"
+
+
 
     }
+    const bannerStyle={
+      display:"flex",
+      flexDirection:"row",
+      marginTop:"50px"
+
+
+    }
+    const banner2={
+    width:"1000px",
+    height:"500px",
+    background:"url(https://cdn-az.taxslayer.com/content/images/refund_calc_image.jpg)",
+    backgroundSize:"cover",
+
+
+
+    }
+
+
+
+
+
 
     return (
 
@@ -154,18 +344,14 @@ export default class RefundCalculator extends React.PureComponent {
                     </div>
 
                     </div>
-                  </div>
 
-                  <div style={container}>
-                    <div style={refundBox}></div>
-                    <div style={refundBox}></div>
-                    <div style={refundBox}></div>
-                    <div style={refundBox}></div>
-                    <div style={refundBox}></div>
-                    <div style={refundBox}></div>
-                    <div style={refundBox}></div>
                   </div>
+                    {this.renderBoxes()}
 
+
+                <div style={bannerStyle}>
+                  <div style={banner2}></div>
+                </div>
 
                 </main>
 

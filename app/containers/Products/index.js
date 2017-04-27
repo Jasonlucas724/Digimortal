@@ -119,34 +119,95 @@ export default class Products extends React.PureComponent {
 
 
     }
-    const banner2={
+    const section2={
       display:"flex",
       flexDirection:"row",
-      justifyContent:"space-between",
-      width:"200px",
-      height:"300px",
+      justifyContent:"space-around",
+      backgroundSize:"cover",
+      marginTop:"150px"
 
     }
     const image1={
-      display:"flex",
-      flexDirection:"row",
       width:"200px",
       height:"200px",
       background:"url(https://cdn-az.taxslayer.com/content/images/fees_seal.png?v=2017.4.12.1)",
-      backgroundSize:"cover",
-      marginTop:"200px",
+      backgroundSize:"cover"
 
     }
     const image2={
-      display:"flex",
-      flexDirection:"row",
       width:"200px",
       height:"200px",
-      background:"url(https://cdn-az.taxslayer.com/content/images/max-refund_seal.png?v=2017.4.12.1)",
-      backgroundSize:"cover",
+      background:"url(https://cdn-az.taxslayer.com/content/images/max-refund_seal.png?v=2017.4.20.1)",
+      backgroundSize:"cover"
 
 
     }
+    const image3={
+      width:"200px",
+      height:"200px",
+      background:"url(https://cdn-az.taxslayer.com/content/images/accuracy_seal.png?v=2017.4.20.1)",
+      backgroundSize:"cover"
+    }
+    const section3={
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"space-around",
+      marginTop:"150px"
+
+    }
+    const image4={
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"space-around",
+      textAlign:"center",
+      width:"300px",
+      height:"400px",
+      background:"#000000",
+      fontSize:"20px"
+
+    }
+    const textFieldTwo={
+      color:"#ffffff"
+
+    }
+    const image5={
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"space-around",
+      textAlign:"center",
+      width:"300px",
+      height:"400px",
+      background:"#d22938",
+      fontSize:"20px"
+
+    }
+    const image6={
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"space-around",
+      textAlign:"center",
+      width:"300px",
+      height:"400px",
+      background:"#428bca",
+      fontSize:"20px"
+
+    }
+    const image7={
+      display:"flex",
+      flexDirection:"column",
+      justifyContent:"space-around",
+      textAlign:"center",
+      width:"300px",
+      height:"400px",
+      background:"#000000",
+      fontSize:"20px"
+
+    }
+    const textFieldThree={
+      color:"#ffffff"
+
+    }
+
 
 
     const carousel={
@@ -193,11 +254,45 @@ export default class Products extends React.PureComponent {
           </div>
         </div>
 
-        <div style={banner2}>
-          <div style={image1}>
-          </div>
-
+        <div style={section2}>
+          <div style={image1}></div>
+          <div style={image2}></div>
+          <div style={image3}></div>
         </div>
+
+        <div style={section3}>
+          <div style={image4}>
+            <div style={textFieldTwo}>PREMIUM</div>
+            <div style={textFieldTwo}>$40</div>
+            <div style={textFieldTwo}>STATE ADDITIONAL</div>
+            <div style={textFieldTwo}>LIVE CHAT SUPPORT</div>
+            <div style={textFieldTwo}>AUDIT ASSISTANCE</div>
+          </div>
+          <div style={image5}>
+            <div style={textFieldTwo}>CLASSIC</div>
+            <div style={textFieldTwo}>$22</div>
+            <div style={textFieldTwo}>STATE ADDITIONAL</div>
+            <div style={textFieldTwo}>ALL MAJOR FORMS</div>
+            <div style={textFieldTwo}>W2 IMPORT</div>
+          </div>
+          <div style={image6}>
+            <div style={textFieldTwo}>SIMPLY FREE</div>
+            <div style={textFieldTwo}>$0</div>
+            <div></div>
+            <div style={textFieldTwo}>SIMPLE TAX RETURN</div>
+            <div style={textFieldTwo}>FORM 1040 EZ ONLY</div>
+          </div>
+          <div style={image7}>
+            <div style={textFieldTwo}>SELF-EMPLOYED</div>
+            <div style={textFieldTwo}>$55</div>
+            <div style={textFieldTwo}>STATE INCLUDED</div>
+            <div style={textFieldTwo}>BEST FOR SELF-EMPLOYED</div>
+            <div style={textFieldTwo}>& FREELANCERS</div>
+
+          </div>
+        </div>
+
+
 
 
 
