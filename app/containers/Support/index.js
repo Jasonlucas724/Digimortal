@@ -11,6 +11,7 @@ import {Link} from 'react-router';
 import Menu from 'material-ui/svg-icons/navigation/Menu';
 import TextField from 'material-ui/TextField';
 
+
 export default class Support extends React.PureComponent {
   render() {
 
@@ -40,6 +41,76 @@ export default class Support extends React.PureComponent {
       fontSize:"18px",
       fontFamily:"Roboto, sans serif"
     }
+    const supportBar={
+      display:"flex",
+      flexDirection:"row",
+      width:"100%",
+      height:"100px",
+      background:"#d22938",
+      marginTop:"200px",
+
+
+
+
+    }
+    const textField={
+      fontSize:"30px",
+      fontFamily:"Roboto, sans serif",
+      color:"#ffffff",
+      marginLeft:"30px"
+
+    }
+    const searchContainer1={
+      display:"flex",
+      flexDirection:"row",
+      width:"920px",
+      height:"500px",
+      marginTop:"100px",
+      justifyContent:"center",
+      background:"url(http://www.eplanusa.com/uploads/tx_eplandb/Support_01.jpg)",
+      backgroundSize:"cover"
+    }
+    const userContainer={
+      display:"flex",
+      flexDirection:"row"
+
+    }
+    const image={
+      width:"200px",
+      height:"200px",
+      background:"url(http://res.cloudinary.com/demo/image/upload/w_400,h_400,c_crop,g_face,r_max/w_200/lady.jpg)",
+
+    }
+
+    const searchBar={
+
+
+    }
+    const Container={
+      display:"flex",
+      flexDirection:"column",
+      alignSelf:"center",
+      textAlign:"center"
+    }
+
+    const overallContainer = {
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"space-around"
+
+    }
+
+    const userName={
+      fontSize:"20px",
+      fontFamily:"Roboto"
+
+
+    }
+    const paragraphStyle={
+
+    }
+
+
     return (
       <div>
         <Helmet title="Support" meta={[ { name: 'description', content: 'Description of Support' }]}/>
@@ -55,8 +126,31 @@ export default class Support extends React.PureComponent {
                 <Link to="/Support" style={navLink}>Support</Link>
                 <Menu/>
               </nav>
+              <div style={supportBar}>
+                <div style={textField}>TaxSlayer Support</div>
+              </div>
+              <div style={overallContainer}>
+                <div style={searchContainer1}>
+                  <TextField hintText="Search" style={searchBar}/>
+                </div>
+                <div style={Container}>
+                  <div style={image}></div>
+                  <div style={userName}>Tiffany Cooke</div>
+                  <div style={paragraphStyle}>How can we help you?</div>
+
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
             </div>
-            
+
           </header>
           </Responsive>
 
