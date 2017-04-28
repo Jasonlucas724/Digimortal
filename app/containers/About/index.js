@@ -47,44 +47,78 @@ export default class About extends React.PureComponent {
         }
         const mainBackground={
           display:"flex",
+          flexDirection:"column",
 
         }
         const container={
           display:"flex",
           flexDirection:"column",
-          width:"300px",
-          height:"300px",
-          background:"#929998",
+          width:"100%",
+          height:"100px",
+          background:"#ea081d",
           justifyContent:"center",
           fontFamily:"Roboto, sans serif",
-          marginTop:"200px"
+          marginTop:"150px"
 
         }
         const item1={
+        color:"#ffffff",
+        fontSize:"30px",
+        fontFamily:"Roboto, sans serif",
+        marginLeft:"10px"
 
-          color:"ffffff",
+
+        }
+        const imageContainer={
+          display:"flex",
+          flexDirection:"row",
+          justifyContent:"center",
+          width:"1050px",
+          height:"500px",
+          background:"url(http://cbarchitectspc.com/wp-content/uploads/2016/08/tax-slayer-9.jpg)",
+          backgroundSize:"cover",
+          alignSelf:"center"
 
 
 
+        }
+        const image={
+          display:"flex",
 
+        }
+        const paragraphStyle1={
+          display:"flex",
+          flexDirection:"row",
+          justifyContent:"center",
+          width:"100%",
+          marginTop:"150px"
 
 
         }
         const item2={
-          color:"#ffffff",
-          width:"100px",
-
-
-
-        }
-        const item3={
           color:"#000000",
-
-          background:"#929998"
-
-
+          fontFamily:"Roboto, sans serif",
+          fontSize:"25px",
+          width:"700px",
+          height:"350px"
 
         }
+        const footerContainer={
+          display:"flex",
+          flexDirection:"row",
+          justifyContent:"center",
+          width:"100%",
+          height:"100px",
+          background:"#FF170D",
+
+        }
+        const h1={
+          color:"#ffffff",
+          fontSize:"30px",
+          fontFamily:"Roboto, sans serif",
+          marginTop:"30px"
+        }
+
 
 
     return (
@@ -109,10 +143,21 @@ export default class About extends React.PureComponent {
 
             <main style={mainBackground}>
               <div style={container}>
-                <div style={item1}>Classic</div>
-                <div style={item2}>Premium</div>
-                <div style={item3}>Self-Employed</div>
+                <div style={item1}>Why choose Taxslayer?</div>
               </div>
+              <div style={imageContainer}>
+                <div style={image}></div>
+              </div>
+              <div style={paragraphStyle1}>
+                <div style={item2}>Have you ever wondered how TaxSlayer
+                  can be so much easier to use than other tax software?
+                   If so, let us explain. TaxSlayer has spent countless hours analyzing the wants and needs of customers just like you. Because of that, we know and understand exactly what you are looking for when
+                   preparing your taxes. Simple. No surprises.</div>
+              </div>
+              <div style={footerContainer}>
+                <div style={h1}>Start Your Federal Tax Return Today</div>
+              </div>
+
             </main>
 
 
