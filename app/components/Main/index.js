@@ -139,7 +139,7 @@ class Main extends React.PureComponent {
           <div style={heading}>{this.state.boxOne.title}</div>
           <div style={parStyle1}>{this.state.boxOne.body}</div>
           <div style={price}>$40</div>
-          <Button style={buttonStyle}  bsStyle="primary">Primary</Button>
+          <Button style={buttonStyle}  bsStyle="primary">Submit</Button>
         </div>
 
 
@@ -147,14 +147,14 @@ class Main extends React.PureComponent {
           <div style={heading}>{this.state.boxTwo.title}</div>
           <div style={parStyle1}>{this.state.boxTwo.body}</div>
           <div style={price}>$22</div>
-          <Button style={buttonStyle} bsStyle="primary">Primary</Button>
+          <Button style={buttonStyle} bsStyle="primary">Submit</Button>
          </div>
 
         <div style={boxSeven}>
           <div style={heading}>{this.state.boxThree.title}</div>
           <div style={parStyle1}>{this.state.boxThree.body}</div>
           <div style={price}>$55</div>
-          <Button style={buttonStyle}  bsStyle="primary">Primary</Button>
+          <Button style={buttonStyle}  bsStyle="primary">Submit</Button>
         </div>
       </main>
       </Responsive>

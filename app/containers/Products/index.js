@@ -9,6 +9,8 @@ import Helmet from 'react-helmet';
 import Responsive from 'react-responsive';
 import {Link} from 'react-router';
 import Carousel from 'react-bootstrap/lib/Carousel';
+import Button from 'react-bootstrap/lib/Button';
+
 
 export default class Products extends React.PureComponent {
   render() {
@@ -69,7 +71,7 @@ export default class Products extends React.PureComponent {
       flexDirection:"row",
       color:"white",
       fontFamily:"Roboto, sans serif",
-      marginLeft:"19px",
+      marginLeft:"30PX"
     }
     const h6={
       display:"flex",
@@ -167,7 +169,8 @@ export default class Products extends React.PureComponent {
 
     }
     const textFieldTwo={
-      color:"#ffffff"
+      color:"#ffffff",
+
 
     }
     const image5={
@@ -211,10 +214,11 @@ export default class Products extends React.PureComponent {
 
 
     const carousel={
-      marginTop:"1000px",
+      marginTop:"300px",
       width:"1000px",
       left:"450px"
     }
+
 
 
     return (
@@ -264,28 +268,24 @@ export default class Products extends React.PureComponent {
           <div style={image4}>
             <div style={textFieldTwo}>PREMIUM</div>
             <div style={textFieldTwo}>$40</div>
-            <div style={textFieldTwo}>STATE ADDITIONAL</div>
             <div style={textFieldTwo}>LIVE CHAT SUPPORT</div>
             <div style={textFieldTwo}>AUDIT ASSISTANCE</div>
           </div>
           <div style={image5}>
             <div style={textFieldTwo}>CLASSIC</div>
             <div style={textFieldTwo}>$22</div>
-            <div style={textFieldTwo}>STATE ADDITIONAL</div>
             <div style={textFieldTwo}>ALL MAJOR FORMS</div>
             <div style={textFieldTwo}>W2 IMPORT</div>
           </div>
           <div style={image6}>
             <div style={textFieldTwo}>SIMPLY FREE</div>
             <div style={textFieldTwo}>$0</div>
-            <div></div>
             <div style={textFieldTwo}>SIMPLE TAX RETURN</div>
             <div style={textFieldTwo}>FORM 1040 EZ ONLY</div>
           </div>
           <div style={image7}>
             <div style={textFieldTwo}>SELF-EMPLOYED</div>
             <div style={textFieldTwo}>$55</div>
-            <div style={textFieldTwo}>STATE INCLUDED</div>
             <div style={textFieldTwo}>BEST FOR SELF-EMPLOYED</div>
             <div style={textFieldTwo}>& FREELANCERS</div>
 

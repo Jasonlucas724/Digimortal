@@ -91,5 +91,6 @@ export default function createRoutes() {
           .catch(errorLoading);
       },
     },
+
   ];
 }

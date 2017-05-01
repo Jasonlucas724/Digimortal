@@ -1,14 +1,10 @@
-/**
-*
-* Footer
-*
-*/
+
 
 import React from 'react';
 
 class Footer extends React.PureComponent {
   render() {
-    /*footer*/
+
     const boxNine={
       display:"flex",
       width:"100px",
@@ -34,7 +30,7 @@ class Footer extends React.PureComponent {
 
 
     }
-    /*End Footer*/
+
 
     return (
       <Responsive minDeviceWidth={1024}>

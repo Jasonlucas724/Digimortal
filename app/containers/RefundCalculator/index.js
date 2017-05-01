@@ -17,7 +17,7 @@ import ContentCopy from 'material-ui/svg-icons/content/content-copy';
 import Assignment from 'material-ui/svg-icons/action/assignment';
 import AttachMoney from 'material-ui/svg-icons/editor/attach-money';
 import CheckCircle from 'material-ui/svg-icons/action/check-circle';
-
+import Button from 'react-bootstrap/lib/Button';
 
 
 
@@ -149,36 +149,51 @@ export default class RefundCalculator extends React.PureComponent {
       height:"100px",
       background:"#1F5899"
     }
-    var boxStyle = refundBox;
+
+    var refundBoxOne =refundBox;
+    var refundBoxTwo =refundBox;
+    var refundBoxThree =refundBox;
+    var refundBoxFour =refundBox;
+    var refundBoxFive =refundBox;
+    var refundBoxSix =refundBox;
+    var refundBoxSeven =refundBox;
+
+    if(this.state.hover==1){refundBoxOne=hoverStyle;}
+    if(this.state.hover==2){refundBoxTwo=hoverStyle;}
+    if(this.state.hover==3){refundBoxThree=hoverStyle;}
+    if(this.state.hover==4){refundBoxFour=hoverStyle;}
+    if(this.state.hover==5){refundBoxFive=hoverStyle;}
+    if(this.state.hover==6){refundBoxSix=hoverStyle;}
+    if(this.state.hover==7){refundBoxSeven=hoverStyle;}
 
 
     return (
       <div style={container}>
-        <div style={boxStyle}>
+        <div style={refundBoxOne} onMouseEnter={() => this.handleHover(1)} onMouseLeave={() => this.handleHover(0)}>
           <Description style={iconOne}/>
           <p style={textFieldOne}>Basic Info</p>
         </div>
-        <div style={boxStyle}>
+        <div style={refundBoxTwo}  onMouseEnter={() => this.handleHover(2)}onMouseLeave={() => this.handleHover(0)}>
           <Person style={iconTwo}/>
           <p style={textFieldTwo}>Family</p>
         </div>
-        <div style={boxStyle}>
+        <div style={refundBoxThree}  onMouseEnter={() => this.handleHover(3)}onMouseLeave={() => this.handleHover(0)}>
           <AccountBalance style={iconThree}/>
           <p style={textFieldThree}>income</p>
         </div>
-        <div style={boxStyle}>
+        <div style={refundBoxFour}  onMouseEnter={() => this.handleHover(4)}onMouseLeave={() => this.handleHover(0)}>
           <ContentCopy style={iconFour}/>
           <p style={textFieldFour}>Deductions</p>
         </div>
-        <div style={boxStyle}>
+        <div style={refundBoxFive}  onMouseEnter={() => this.handleHover(5)}onMouseLeave={() => this.handleHover(0)}>
           <Assignment style={iconFive}/>
           <p style={textFieldFive}>Credits</p>
         </div>
-        <div style={boxStyle}>
+        <div style={refundBoxSix}  onMouseEnter={() => this.handleHover(6)}onMouseLeave={() => this.handleHover(0)}>
           <AttachMoney style={iconSix}/>
           <p style={textFieldSix}>Results</p>
         </div>
-        <div style={boxStyle}>
+        <div style={refundBoxSeven}  onMouseEnter={() => this.handleHover(7)}onMouseLeave={() => this.handleHover(0)}>
           <CheckCircle style={iconSeven}/>
           <p style={textFieldSeven}>Start</p>
         </div>

@@ -48,17 +48,12 @@ export default class Support extends React.PureComponent {
       height:"100px",
       background:"#d22938",
       marginTop:"200px",
-
-
-
-
     }
     const textField={
       fontSize:"30px",
       fontFamily:"Roboto, sans serif",
       color:"#ffffff",
       marginLeft:"30px"
-
     }
     const searchContainer1={
       display:"flex",
@@ -73,18 +68,14 @@ export default class Support extends React.PureComponent {
     const userContainer={
       display:"flex",
       flexDirection:"row"
-
     }
     const image={
       width:"200px",
       height:"200px",
       background:"url(http://res.cloudinary.com/demo/image/upload/w_400,h_400,c_crop,g_face,r_max/w_200/lady.jpg)",
-
     }
 
     const searchBar={
-
-
     }
     const Container={
       display:"flex",
@@ -96,7 +87,7 @@ export default class Support extends React.PureComponent {
     const overallContainer = {
       display:"flex",
       flexDirection:"row",
-      justifyContent:"space-around"
+      justifyContent:"space-around",
 
     }
 
@@ -104,11 +95,47 @@ export default class Support extends React.PureComponent {
       fontSize:"20px",
       fontFamily:"Roboto"
 
+    }
 
+    const h1={
+      display:"flex",
+      flexDirection:"column",
+      marginLeft:"200px",
+      fontSize:"30px",
+
+
+    }
+    const text={
+    fontFamily:"Roboto, sans serif",
     }
     const paragraphStyle={
+      dISPLAY:"flex",
+      flexDirection:"row",
+      justifyContent:"center",
+      fontFamily:"Roboto, sans serif",
+
 
     }
+    const sectionTwo={
+      display:"flex",
+      flexDirection:"row",
+      justifyContent:"center",
+      borderColor:"#000000",
+
+
+    }
+    const textField2={
+      width:"300px",
+      height:"50px",
+      borderColor:"2px black solid"
+
+
+      }
+      const text2={
+
+        }
+
+
 
 
     return (
@@ -135,22 +162,20 @@ export default class Support extends React.PureComponent {
                 </div>
                 <div style={Container}>
                   <div style={image}></div>
-                  <div style={userName}>Tiffany Cooke</div>
-                  <div style={paragraphStyle}>How can we help you?</div>
-
+                  <div style={userName}>Jane Doe</div>
+                  <div style={paragraphStyle}>Please enter your question.</div>
                 </div>
               </div>
-
-
-
-
-
-
-
-
-
+                <div style={h1}>
+                  <div style={text}>Welcome to our Support center, how may we help you.
+                </div>
+                <div style={sectionTwo}>
+                  <div style={textField2}></div>
+                  <div style={text}></div>
+                </div>
             </div>
 
+            </div>
           </header>
           </Responsive>
 

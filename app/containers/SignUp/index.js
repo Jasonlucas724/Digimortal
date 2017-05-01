@@ -13,6 +13,7 @@ export default class SignUp extends React.PureComponent {
     const bodyBackground={
       display:"flex",
       flexDirection:"row",
+      width:"100%",
       height:"300px",
       border:"2px solid black",
       maxWidth:"1000px",
@@ -23,15 +24,15 @@ export default class SignUp extends React.PureComponent {
     const logo={
       display:"flex",
       flexDirection:"row",
-      width:"450px",
       height:"300px",
-      background:"url()",
+      background:"url(https://blog.taxslayer.com/wp-content/uploads/2016/03/TaxSlayer_Logo_Red_Registered_LG.png)",
       backgroundSize:"cover",
       bottom:"10px"
 
     }
     const headerStyle={
       height:"40px",
+      width:"100%",
       background:"red",
       width:"498px"
 
@@ -60,6 +61,7 @@ export default class SignUp extends React.PureComponent {
     return (
       <div>
         <Helmet title="SignUp" meta={[ { name: 'description', content: 'Description of SignUp' }]}/>
+
 
         <div style={bodyBackground}>
           <div style={logo}></div>
