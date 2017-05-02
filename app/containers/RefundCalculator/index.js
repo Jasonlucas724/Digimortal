@@ -18,6 +18,7 @@ import Assignment from 'material-ui/svg-icons/action/assignment';
 import AttachMoney from 'material-ui/svg-icons/editor/attach-money';
 import CheckCircle from 'material-ui/svg-icons/action/check-circle';
 import Button from 'react-bootstrap/lib/Button';
+import Toggle from 'material-ui/Toggle';
 
 
 
@@ -197,6 +198,12 @@ export default class RefundCalculator extends React.PureComponent {
           <CheckCircle style={iconSeven}/>
           <p style={textFieldSeven}>Start</p>
         </div>
+        <footer>
+
+
+
+
+        </footer>
       </div>
     )
   }
@@ -310,10 +317,24 @@ export default class RefundCalculator extends React.PureComponent {
     height:"500px",
     background:"url(https://cdn-az.taxslayer.com/content/images/refund_calc_image.jpg)",
     backgroundSize:"cover",
+    flexStretch:"100px"
 
 
 
     }
+    const toggleContainer={
+    display:"flex",
+    flexDirection:"row",
+    justifyContent:"space-between",
+    width:"925px",
+
+
+    }
+    const toggleOne={
+        width:"120px"
+
+    }
+
 
 
 
@@ -362,7 +383,29 @@ export default class RefundCalculator extends React.PureComponent {
 
                   </div>
                     {this.renderBoxes()}
-
+                    <div style={toggleContainer}>
+                      <div style={toggleOne}>
+                        <Toggle />
+                      </div>
+                      <div style={toggleOne}>
+                        <Toggle />
+                      </div>
+                      <div style={toggleOne}>
+                        <Toggle />
+                      </div>
+                      <div style={toggleOne}>
+                        <Toggle />
+                      </div>
+                      <div style={toggleOne}>
+                        <Toggle />
+                      </div>
+                      <div style={toggleOne}>
+                        <Toggle />
+                      </div>
+                      <div style={toggleOne}>
+                        <Toggle />
+                      </div>
+                    </div>
 
                 <div style={bannerStyle}>
                   <div style={banner2}></div>

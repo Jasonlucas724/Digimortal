@@ -10,46 +10,46 @@ import Helmet from 'react-helmet';
 export default class SignUp extends React.PureComponent {
   render() {
 
-    const bodyBackground={
+    const border={
       display:"flex",
-      flexDirection:"row",
+      flexDirection:"column",
       width:"100%",
       height:"300px",
       border:"2px solid black",
       maxWidth:"1000px",
       margin:"0 auto",
-      justifyContent:"space-between",
       marginTop:"350px"
     }
     const logo={
-      display:"flex",
-      flexDirection:"row",
-      height:"300px",
-      background:"url(https://blog.taxslayer.com/wp-content/uploads/2016/03/TaxSlayer_Logo_Red_Registered_LG.png)",
-      backgroundSize:"cover",
-      bottom:"10px"
+      color:"black",
+      justifyContent:"center",
+      alignSelf:"center",
+      fontSize:"30px"
+
 
     }
     const headerStyle={
       height:"40px",
       width:"100%",
       background:"red",
-      width:"498px"
+
 
     }
     const inputStyle={
       display:"flex",
       flexDirection:"row",
+      justifyContent:"center",
       fontFamily:"Roboto, sans serif",
+      border:"groove"
     }
 
     const signinBox={
-      display:"flex",
-      width:"50%",
+
+      width:"100%",
       flexDirection:"column"
     }
     const signupBox={
-      width:"50%"
+      width:"100%"
     }
     const labelOne={
       fontFamily:"Roboto, sans serif"
@@ -63,8 +63,8 @@ export default class SignUp extends React.PureComponent {
         <Helmet title="SignUp" meta={[ { name: 'description', content: 'Description of SignUp' }]}/>
 
 
-        <div style={bodyBackground}>
-          <div style={logo}></div>
+        <div style={border}>
+          <div style={logo}>SIGN INTO YOUR ACCOUNT</div>
           <div style={signupBox}></div>
 
           <div style={signinBox}>

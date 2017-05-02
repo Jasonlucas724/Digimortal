@@ -8,6 +8,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 
+
 export default class Dashboard extends React.PureComponent {
           constructor(props) {
             super(props);
@@ -138,10 +139,24 @@ export default class Dashboard extends React.PureComponent {
               display:"flex",
               background:"url(https://pbs.twimg.com/media/C9D07mhXoAEUezM.jpg)",
               backgroundSize:"cover",
-              minHeight:"100vh",
+              minHeight:"70vh",
               flexDirection:"column"
             }
+            const sectionTwo={
+            display:"flex",
+            flexDirection:"row",
+            width:"100%",
+            height:"200px",
+            background:"red",
+            marginTop:"300px",
+            }
 
+
+
+            const row1={
+            background:"red"
+
+            }
             return (
               <div style={background}>
                 <Helmet title="Dashboard" meta={[ { name: 'description', content: 'Description of Dashboard' }]}/>
@@ -161,6 +176,17 @@ export default class Dashboard extends React.PureComponent {
                 <div style={divFive}>
                   <input style={inputThree} onTouchTap={this.storeArticle} type="submit"/>
                 </div>
+
+
+
+                <main>
+                <div style={sectionTwo}>
+                  <div style={row1}></div>
+                </div>
+
+
+
+                </main>
               </div>
 
     );
