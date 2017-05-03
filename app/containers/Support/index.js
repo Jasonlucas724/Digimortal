@@ -106,7 +106,15 @@ export default class Support extends React.PureComponent {
 
     }
     const text={
+    display:"flex",
+    flexDirection:"column",
+    justifyContent:"center",
     fontFamily:"Roboto, sans serif",
+    }
+    const inputBox={
+    width:"200px",
+    height:"100px",
+    border:"2px, black, solid"
     }
     const paragraphStyle={
       dISPLAY:"flex",
@@ -164,6 +172,7 @@ export default class Support extends React.PureComponent {
                   <div style={image}></div>
                   <div style={userName}>Jane Doe</div>
                   <div style={paragraphStyle}>Please enter your question.</div>
+                    <TextField hintText="Search" style={searchBar}/>
                 </div>
               </div>
                 <div style={h1}>
@@ -171,7 +180,8 @@ export default class Support extends React.PureComponent {
                 </div>
                 <div style={sectionTwo}>
                   <div style={textField2}></div>
-                  <div style={text}></div>
+
+
                 </div>
             </div>
 

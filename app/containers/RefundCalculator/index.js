@@ -329,9 +329,11 @@ export default class RefundCalculator extends React.PureComponent {
     width:"925px",
 
 
+
     }
     const toggleOne={
-        width:"120px"
+        width:"120px",
+
 
     }
 
